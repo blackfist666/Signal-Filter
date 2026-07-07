@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --bg: #14181D;
+    --panel: #1B2129;
+    --edge: #262E38;
+    --ink: #E7E3DA;
+    --dim: #8E96A0;
+    --accent: #E5A44B;
+    --mono: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    width: 240px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    padding: 16px;
+  }
+  h1 { font-family: var(--mono); font-size: 13px; letter-spacing: 0.15em; margin-bottom: 12px; }
+  .stat { color: var(--dim); font-size: 12px; margin-bottom: 14px; font-family: var(--mono); }
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .switch { position: relative; width: 44px; height: 24px; }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .slider { position: absolute; inset: 0; background: var(--edge); border-radius: 24px; cursor: pointer; transition: background 0.2s; }
+  .slider::before { content: ""; position: absolute; width: 18px; height: 18px; left: 3px; top: 3px; background: var(--ink); border-radius: 50%; transition: transform 0.2s; }
+  input:checked + .slider { background: var(--accent); }
+  input:checked + .slider::before { transform: translateX(20px); }
+  a {
+    display: block;
+    text-align: center;
+    background: var(--panel);
+    border: 1px solid var(--edge);
+    border-radius: 7px;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 8px;
+    font-size: 13px;
+  }
+  a:hover { border-color: var(--accent); }
+</style>
+</head>
+<body>
+  <h1>SIGNAL FILTER</h1>
+  <div class="toggle-row">
+    <span>Filtering</span>
+    <span class="switch">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </span>
+  </div>
+  <div class="stat" id="stats">—</div>
+  <a href="#" id="openOptions">Open settings</a>
+  <script src="popup.js"></script>
+</body>
+</html>

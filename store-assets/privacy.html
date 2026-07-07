@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Signal Filter</title>
+<style>
+  :root {
+    --bg: #14181D;
+    --panel: #1B2129;
+    --edge: #262E38;
+    --ink: #E7E3DA;
+    --dim: #8E96A0;
+    --accent: #E5A44B;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 56px 24px 96px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  h1 {
+    font-family: var(--mono);
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+  h1 .bar { display: inline-block; width: 84px; height: 20px; background: var(--ink); border-radius: 2px; }
+  .updated { color: var(--dim); font-size: 13px; font-family: var(--mono); margin-bottom: 40px; }
+  h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin: 36px 0 10px;
+  }
+  p { color: var(--ink); margin-bottom: 12px; }
+  .lede {
+    background: var(--panel);
+    border: 1px solid var(--edge);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 8px;
+  }
+  ul { padding-left: 22px; margin-bottom: 12px; }
+  li { margin-bottom: 6px; }
+  code { font-family: var(--mono); font-size: 14px; background: var(--panel); padding: 1px 6px; border-radius: 4px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>SIGNAL <span class="bar" aria-hidden="true"></span> <span style="position:absolute;left:-9999px">FILTER</span></h1>
+  <p class="updated">Privacy Policy · Last updated: 6 July 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version:</strong> Signal Filter collects nothing, transmits nothing, and has no servers. Every setting you create stays on your device and inside your own browser profile.</p>
+  </div>
+
+  <h2>What the extension does</h2>
+  <p>Signal Filter is a personal content-filtering tool. You choose websites to block (with a redirect destination of your choice) and words or phrases to redact from pages you visit. All filtering happens locally, inside your browser.</p>
+
+  <h2>Data collection</h2>
+  <p>Signal Filter does not collect, store, transmit, sell, or share any personal data. Specifically, it has:</p>
+  <ul>
+    <li>No analytics or telemetry</li>
+    <li>No external servers or network requests of its own</li>
+    <li>No tracking of your browsing history</li>
+    <li>No accounts, sign-ins, or identifiers</li>
+  </ul>
+
+  <h2>What is stored, and where</h2>
+  <p>Your settings — the blocklist, redirect URL, redaction words, and on/off toggles — are stored using the browser's built-in <code>chrome.storage.sync</code> API. This keeps them on your device and, if you are signed into your browser, synchronised across your own devices by your browser vendor under their privacy policy. The extension developer has no access to this data at any time.</p>
+
+  <h2>Why the extension requests broad permissions</h2>
+  <p>Signal Filter asks for permission to read and change data on websites you visit. This is required solely so the word-redaction feature can find and black out the words <em>you</em> have chosen, on the pages you open. Page content is processed in-memory within your browser and is never recorded or sent anywhere. Site blocking uses the browser's declarative rules engine, which redirects blocked domains without the extension reading any page content at all.</p>
+
+  <h2>Third parties</h2>
+  <p>No data is shared with third parties, because no data is collected in the first place.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the updated version will be posted at this address with a new "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy can be sent to: <a href="mailto:filteredsignal@proton.me">filteredsignal@proton.me</a></p>
+</div>
+</body>
+</html>
