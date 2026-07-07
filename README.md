@@ -17,9 +17,9 @@ A personal content-filtering extension for Chrome / Edge / Brave (Manifest V3).
 ## Usage
 
 - Click the toolbar icon for a quick on/off toggle and to open **Settings**.
-- **Blocked sites** — enter bare domains like `dailymail.co.uk`. Subdomains are covered automatically (`www.`, `m.`, etc.).
+- **Blocked sites** — enter bare domains like `site.com`. Subdomains are covered automatically (`www.`, `m.`, etc.).
 - **Redirect destination** — full URL, e.g. `https://www.google.com` or anything else.
-- **Word redaction** — add words or phrases (`BBC`, `Daily Mail`...). Matching is case-insensitive and whole-word, and longer phrases take priority over shorter ones. Choose *Black out* or *Remove entirely*.
+- **Word redaction** — add words or phrases (`word`, `another phrase`...). Matching is case-insensitive and whole-word, and longer phrases take priority over shorter ones. Choose *Black out* or *Remove entirely*.
 
 The extension ships completely empty — on first install the settings page opens automatically so you can set your own blocklist, redirect destination, and redaction words from scratch.
 

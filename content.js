@@ -28,7 +28,7 @@
   const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
   // Whole-word match where the keyword starts/ends with a word character,
-  // case-insensitive. Longest keywords first so "BBC News" wins over "BBC".
+  // case-insensitive. Longest keywords first so "some phrase" wins over "phrase".
   const sorted = [...keywords].sort((a, b) => b.length - a.length);
   const pattern = sorted
     .map((k) => {
