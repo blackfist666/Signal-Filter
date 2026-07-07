@@ -4,7 +4,7 @@
 const DEFAULTS = {
   enabled: true,
   domains: [],
-  redirectUrl: "https://www.google.com",
+  redirectUrl: "https://duckduckgo.com",
   scrubEnabled: true,
   scrubStyle: "redact", // "redact" (█████) or "remove"
   keywords: []
