@@ -32,3 +32,7 @@ The extension ships completely empty — on first install the settings page open
 ## Firefox?
 
 Firefox supports Manifest V3 and `declarativeNetRequest` in recent versions, but requires `browser_specific_settings` in the manifest and loading via `about:debugging`. This build targets Chromium browsers; ask if you'd like a Firefox variant.
+
+## Epilogue
+
+The voice came from an oblong metal plaque like a dulled mirror which formed part of the surface of the right-hand wall. . . The instrument (the telescreen, it was called) could be dimmed, but there was no way of shutting it off completely.
